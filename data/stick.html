@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Duel of the Sticks</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Duel of the Sticks</h1>
+    <p>Players take turns to remove 1, 2 or 3 sticks. Whoever takes the last stick loses the duel.</p>
+    <div id="sticks-container">
+        <!-- Insérez ici les bâtonnets -->
+    </div>
+    <button id="startButton">Start the Duel</button>
+    <p id="message"></p>
+    <button id="removeButton" disabled>Confirm</button>
+    <br><br><br>
+    <button id="resetButton" style="display: none; text-align: center;">Replay</button>
+    <br><br>
+    <a href="../games.html" class="go_back">Go back</a>
+</body>
+<script src="stick.js"></script>
+<style>
+    .stick {
+        width: 20px;
+        height: 100px;
+        background: #999;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .stick.selected {
+        background: #ff0000;
+    }
+
+    .player-1-turn .stick.selected {
+        background: #ff0000;
+    }
+
+    .player-2-turn .stick.selected {
+        background: #0000ff;
+    }
+</style>
+</html>
